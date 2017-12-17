@@ -1,5 +1,8 @@
 package com.danshima;
 
+
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -8,9 +11,12 @@ public class Main {
     System.out.println(binarySearch.binarySearch(a, 7));
     SwapFunction swapFunction = new SwapFunction();
     System.out.println(swapFunction.testSwap());
-    MinimumArray minimumArray = new MinimumArray();
+    SelectionSort minimumArray = new SelectionSort();
     int[] array = {18, 6, 66, 44, 9, 22, 14};
     System.out.println(minimumArray.indexOfMinimum(array, 3));
+    int[] array1 = {22, 11, 99, 88, 9, 7, 42};
+    minimumArray.selectionSort(array1);
+    System.out.println("Array after sorting: " + Arrays.toString(array1));
 
     }
 
