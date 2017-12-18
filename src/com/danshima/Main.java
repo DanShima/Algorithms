@@ -23,6 +23,9 @@ public class Main {
 
     System.out.println(Recursion.iterativeFactorial(5));
     System.out.println("The value of 4! is " + Recursion.recursiveFactorial(4));
+
+    System.out.println(Palindrome.isPalindrome("rotor"));
+        System.out.println(Palindrome.isPal("roto"));
     }
 
 
