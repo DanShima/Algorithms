@@ -17,7 +17,8 @@ public class Main {
     int[] array1 = {22, 11, 99, 88, 9, 7, 42};
     minimumArray.selectionSort(array1);
     System.out.println("Array after sorting: " + Arrays.toString(array1));
-
+    InsertionSort.insert(array, 2, 4);
+    System.out.println(Arrays.toString(array));
     }
 
 
