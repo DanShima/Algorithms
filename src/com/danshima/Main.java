@@ -6,19 +6,23 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-    BinarySearch binarySearch = new BinarySearch();
     int[] a = {8, 12, 3, 24, 71, 10, 1};
-    System.out.println(binarySearch.binarySearch(a, 7));
-    SwapFunction swapFunction = new SwapFunction();
-    System.out.println(swapFunction.testSwap());
-    SelectionSort minimumArray = new SelectionSort();
+    System.out.println(BinarySearch.binarySearch(a, 7));
+
+    System.out.println(SwapFunction.testSwap());
+
     int[] array = {18, 6, 66, 44, 9, 22, 14};
-    System.out.println(minimumArray.indexOfMinimum(array, 3));
+    System.out.println(SelectionSort.indexOfMinimum(array, 3));
+
     int[] array1 = {22, 11, 99, 88, 9, 7, 42};
-    minimumArray.selectionSort(array1);
+    SelectionSort.selectionSort(array1);
     System.out.println("Array after sorting: " + Arrays.toString(array1));
+
     InsertionSort.insertionSort(array);
     System.out.println(Arrays.toString(array));
+
+    System.out.println(Recursion.iterativeFactorial(5));
+    System.out.println("The value of 4! is " + Recursion.recursiveFactorial(4));
     }
 
 

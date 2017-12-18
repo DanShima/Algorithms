@@ -10,7 +10,7 @@ Go back to step 2.
  */
 
 public class BinarySearch {
-    public boolean binarySearch(int[] array, int guess){
+    public static boolean binarySearch(int[] array, int guess){
         if(array.length == 0){
             return false;
         }
