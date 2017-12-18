@@ -7,6 +7,7 @@ package com.danshima;
  */
 
 public class InsertionSort {
+    //Fix the insert function to correctly insert the given value into the array.
     public static void insert(int[] array, int rightIndex, int value){
         int i;
         for(i = rightIndex; i >= 0 && array[i] > value; i--){
@@ -15,4 +16,17 @@ public class InsertionSort {
         }
         array[i + 1] = value;
     }
+
+    /**
+     * Insertion sort loops over items in the array, inserting each new item into the subarray before the new item.
+     *  Write insertion sort, making use of the insert function above
+     */
+    public static void insertionSort(int[] array){
+        for(int i = 1; i < array.length; i++){
+            insert(array, i - 1, array[i]);
+        }
+
+    }
+
+
 }
