@@ -26,6 +26,9 @@ public class Main {
 
     System.out.println(Palindrome.isPalindrome("rotor"));
         System.out.println(Palindrome.isPal("roto"));
+
+        System.out.println(Recursion.recursivePower(3, 4));
+        Recursion.solveTowerOfHanoi(3, "A", "B", "C");
     }
 
 
