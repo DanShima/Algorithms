@@ -33,7 +33,10 @@ public class Main {
         MergeSort.mergeSort(array1, 0, array1.length -1);
         System.out.println(Arrays.toString(array1));
 
-
+        int[] arrayQuickSort = {9, 7, 5, 11, 12, 2, 14, 3, 10, 4, 6};
+        QuickSort.partition(arrayQuickSort, 0, arrayQuickSort.length-1);
+        QuickSort.quickSort(arrayQuickSort, 0, arrayQuickSort.length-1);
+        System.out.println(Arrays.toString(arrayQuickSort));
     }
 
 
