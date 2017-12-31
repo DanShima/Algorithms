@@ -17,11 +17,21 @@ public class Trie {
 
     static class TrieNode {
         //Each trie node can only contains 'a'-'z' characters thus use a small array to store the character.
-        TrieNode[] children;
-        boolean isEndOfWord;
+        private TrieNode[] children;
+        private boolean isEndOfWord;
+        private int length;
         public TrieNode() {
-            this.children = new TrieNode[26];
-        } //alphabet size is 26
+            this.children = new TrieNode[26]; //alphabet size is 26
+            length = 0;
+        }
+
+        public void setChild(char letter, TrieNode node){
+            children[letter] = node;
+            length++;
+        }
+        public int getLength(){
+            return length;
+        }
 
     }
 
@@ -71,6 +81,8 @@ public class Trie {
         }
         return wordArray;
     }
+
+
 
 
     public static void main(String args[])
