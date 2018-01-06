@@ -40,4 +40,14 @@ public class Node {
         }
         return head;
     }
+
+    //singly linked list
+    public void appendToTail(int data){
+        Node end = new Node(data);
+        Node node = this;
+        while(node.next != null){
+            node = node.next;
+        }
+        node.next = end;
+    }
 }
