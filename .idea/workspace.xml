@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c144ccb-963c-4fb1-a4fc-f66be4503cde" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/danshima/Node.java" afterPath="$PROJECT_DIR$/src/com/danshima/Node.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/danshima/MyStack.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Node.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/danshima/Node.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="478">
@@ -23,6 +24,21 @@
                 <element signature="imports" expanded="true" />
                 <element signature="e#375#376#0" expanded="true" />
                 <element signature="e#425#426#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyStack.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/danshima/MyStack.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="801">
+              <caret line="49" column="40" lean-forward="false" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
+              <folding>
+                <element signature="e#275#276#0" expanded="true" />
+                <element signature="e#315#316#0" expanded="true" />
+                <element signature="e#1047#1048#0" expanded="true" />
+                <element signature="e#1081#1082#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -108,16 +124,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinarySearch.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/danshima/BinarySearch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -160,6 +166,7 @@
         <option value="$PROJECT_DIR$/src/com/danshima/PrimeNumber.java" />
         <option value="$PROJECT_DIR$/src/com/danshima/SingleExercises.java" />
         <option value="$PROJECT_DIR$/src/com/danshima/Node.java" />
+        <option value="$PROJECT_DIR$/src/com/danshima/MyStack.java" />
       </list>
     </option>
   </component>
@@ -393,14 +400,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/danshima/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="56" lean-forward="false" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/danshima/Palindrome.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -777,6 +776,19 @@
             <element signature="imports" expanded="true" />
             <element signature="e#375#376#0" expanded="true" />
             <element signature="e#425#426#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/danshima/MyStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="801">
+          <caret line="49" column="40" lean-forward="false" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
+          <folding>
+            <element signature="e#275#276#0" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#1047#1048#0" expanded="true" />
+            <element signature="e#1081#1082#0" expanded="true" />
           </folding>
         </state>
       </provider>
