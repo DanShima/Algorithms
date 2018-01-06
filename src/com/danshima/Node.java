@@ -5,12 +5,13 @@ import java.util.List;
 
 public class Node {
     protected int data;
+    protected Node next = null;
     protected boolean visited;
     protected List<Node> neighbours;
 
     Node(int data)
     {
-        this.data=data;
+        this.data = data;
         this.neighbours=new ArrayList<>();
 
     }
@@ -23,5 +24,20 @@ public class Node {
     }
     public void setNeighbours(List<Node> neighbours) {
         this.neighbours = neighbours;
+    }
+
+    public Node deleteNode(Node head, int data){
+        Node node = head;
+        if(node.data == data){
+            return head.next; //moved head
+        }
+        while(node.next != null){
+            if(node.next.data == data){
+                node.next = node.next.next;
+                return head; //head didn't change
+            }
+            node = node.next;
+        }
+        return head;
     }
 }
