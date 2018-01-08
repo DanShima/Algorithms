@@ -25,7 +25,11 @@ public class SingleExercises {
         }
     }
 
-    //computes the Nth Fibonacci number. it takes O(2 to the power of n)
+    /**
+     * computes the Nth Fibonacci number. it takes O(2 to the power of n)     *
+     * @param n
+     * @return
+     */
     int fib(int n){
         if(n <= 0) return 0;
         else if(n ==1) return 1;
@@ -39,8 +43,10 @@ public class SingleExercises {
         }
     }
 
-    //print the powers of 2 from 1 through n (inclusive)
-    //divide n by 2 untill we get down to the base case (1). the runtime is O(log n).
+    /**
+     *  print the powers of 2 from 1 through n (inclusive)
+     *divide n by 2 untill we get down to the base case (1). the runtime is O(log n).
+     */
     int powersOf2(int n){
         if(n < 1) {
             return 0;
@@ -55,5 +61,4 @@ public class SingleExercises {
         }
 
     }
-
 }
