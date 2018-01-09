@@ -30,4 +30,22 @@ public class BinarySearch {
         return false;
     }
 
+    public static int binarySearchRecursive(int[]a, int guess, int low, int high){
+        if(low > high) return -1; //error
+        int middle = (low + high)/2;
+        if(a[middle] < guess) {
+            return binarySearchRecursive(a, guess, middle + 1, high);
+        } else if(a[middle] > guess){
+            return binarySearchRecursive(a, guess, low, middle - 1);
+        } else {
+            return middle;
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] a = {8, 12, 3, 24, 71, 10, 1};
+        System.out.println(BinarySearch.binarySearch(a, 24));
+        System.out.println(binarySearchRecursive(a, 24, 1, a.length - 1));
+    }
+
 }

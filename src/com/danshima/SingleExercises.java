@@ -61,4 +61,43 @@ public class SingleExercises {
         }
 
     }
+
+    //determine if a ASCII string has all unique characters.
+    boolean isUniqueChars(String string){
+        if(string.length() > 128) return false;
+        boolean[] char_set = new boolean[128];
+        for(int i = 0; i < string.length(); i++){
+            int value = string.charAt(i);
+            if(char_set[value]){ //already found this char in string
+                return false;
+            }
+            char_set[value] = true;
+        }
+        return true;
+    }
+
+    //check if two strings have identical character counts
+    boolean permutation(String s, String t){
+        if(s.length() != t.length()){
+            return false;
+        }
+        int[] letters = new int[128];
+        char[] s_array = s.toCharArray();
+        for(char c : s_array){
+            //count number of each char in s
+            letters[c]++;
+        }
+        for(int i = 0; i < t.length(); i++){
+            int c = t.charAt(i);
+            letters[c]--;
+            if(letters[c] < 0){
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+
+
 }

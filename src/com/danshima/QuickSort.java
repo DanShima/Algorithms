@@ -1,5 +1,11 @@
 package com.danshima;
 
+/**
+ * In quick sort, we pick a random element and partition the array,
+ * such that all numbers that are less than the partitioning element
+ * come before all elements that are greater than it.
+ */
+
 public class QuickSort {
 
     /* low  --> Starting index,  high  --> Ending index */
