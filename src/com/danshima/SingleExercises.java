@@ -62,7 +62,10 @@ public class SingleExercises {
 
     }
 
-    //determine if a ASCII string has all unique characters.
+    /**determine if a ASCII string has all unique characters.     *
+     * @param string
+     * @return
+     */
     boolean isUniqueChars(String string){
         if(string.length() > 128) return false;
         boolean[] char_set = new boolean[128];
@@ -76,7 +79,9 @@ public class SingleExercises {
         return true;
     }
 
-    //check if two strings have identical character counts
+    /**check if two strings have identical character counts
+    iterate through the code and count how many times each character appears, and then compare the two arrays
+    **/
     boolean permutation(String s, String t){
         if(s.length() != t.length()){
             return false;
@@ -95,6 +100,32 @@ public class SingleExercises {
             }
         }
         return true;
+    }
+
+    /**replace all spaces in a string with '%20'
+    *edit the string starting from the end. we use two scans. first scan counts the number of spaces.
+    *the second scan, done in reverse order, edits the string. the space is replaced with %20
+     **/
+    void replaceSpaces(char[] str, int trueLength){
+        int spaceCount = 0, index, i = 0;
+        for(i = 0; i < trueLength; i++){
+            if(str[i] == ' '){
+                spaceCount++;
+            }
+        }
+        index = trueLength + spaceCount * 2;
+        if(trueLength < str.length) str[trueLength] = '\0'; //end array
+        for(i = trueLength - 1; i >= 0; i--){
+            if(str[i] == ' '){
+                str[index - 1] = '0';
+                str[index - 2] = '2';
+                str[index - 3] = '%';
+                index = index - 3;
+            }else{
+                str[index - 1] = str[i];
+                index--;
+            }
+        }
     }
 
 
