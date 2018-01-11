@@ -3,7 +3,11 @@ package com.danshima;
 import static java.lang.Math.sqrt;
 
 public class SingleExercises {
-    //this runs in O(sqrt n) time.
+    /**this runs in O(sqrt n) time.
+     * Check if a number is a prime number
+     * @param n
+     * @return
+     */
     boolean isPrime(int n){
         //the loop starts when x = 2 and end when x * x = n. it stops when x = the square root of n
         for(int x = 2; x <= sqrt(n); x++){
@@ -14,7 +18,11 @@ public class SingleExercises {
         return true;
     }
 
-    //recursion from n to n-1 to n-2 down to 1. it takes O(n) time
+    /**recursion from n to n-1 to n-2 down to 1. it takes O(n) time
+     *
+     * @param n
+     * @return
+     */
     int factorial(int n){
         if(n < 0){
             return -1;
@@ -128,6 +136,21 @@ public class SingleExercises {
         }
     }
 
+    /**
+     * Find the kth to to last element of a linked list
+     * this method recurses through the linked list. when it hits the end, the method passes back a counter set to 0.
+     * each parent call adds 1 to the counter, so when it equals k, it reaches the kth to last element
+     */
+    int printKthToLast(Node head, int k){
+        if(head == null){
+            return 0;
+        }
+        int index = printKthToLast(head.next, k) + 1;
+        if(index == k){
+            System.out.println(k + "th to last node is " + head.data);
+        }
+        return index;
+    }
 
 
 
